@@ -1,0 +1,23 @@
+<Application x:Class="WalletKeyTool.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+  <Application.Resources>
+    <Color x:Key="Bg">#101722</Color>
+    <Color x:Key="Panel">#182333</Color>
+    <Color x:Key="Panel2">#202E40</Color>
+    <Color x:Key="Accent">#62B6CB</Color>
+    <Color x:Key="Text">#E7EDF5</Color>
+    <Color x:Key="Muted">#9AAABD</Color>
+    <SolidColorBrush x:Key="BgBrush" Color="{StaticResource Bg}"/>
+    <SolidColorBrush x:Key="PanelBrush" Color="{StaticResource Panel}"/>
+    <SolidColorBrush x:Key="Panel2Brush" Color="{StaticResource Panel2}"/>
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource Accent}"/>
+    <SolidColorBrush x:Key="TextBrush" Color="{StaticResource Text}"/>
+    <SolidColorBrush x:Key="MutedBrush" Color="{StaticResource Muted}"/>
+    <Style TargetType="Window"><Setter Property="Background" Value="{StaticResource BgBrush}"/><Setter Property="Foreground" Value="{StaticResource TextBrush}"/><Setter Property="FontFamily" Value="Segoe UI"/></Style>
+    <Style TargetType="TextBlock"><Setter Property="Foreground" Value="{StaticResource TextBrush}"/></Style>
+    <Style TargetType="Button"><Setter Property="Foreground" Value="#07131D"/><Setter Property="Background" Value="{StaticResource AccentBrush}"/><Setter Property="BorderThickness" Value="0"/><Setter Property="Padding" Value="14,9"/><Setter Property="Margin" Value="0,4,0,4"/><Setter Property="FontWeight" Value="SemiBold"/><Setter Property="Cursor" Value="Hand"/></Style>
+    <Style TargetType="TextBox"><Setter Property="Background" Value="#0D1520"/><Setter Property="Foreground" Value="{StaticResource TextBrush}"/><Setter Property="BorderBrush" Value="#34465C"/><Setter Property="Padding" Value="9"/><Setter Property="CaretBrush" Value="White"/></Style>
+  </Application.Resources>
+</Application>
